@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="shortcut icon" type="imagex/png" href="imagens/icone.ico">
+    <source>
+
+    <title>Gerador de avatar</title>
+   
+  </head>
+  <body>
+    <div class="container">
+      <img alt="Escolar Manager" src="imagens/escolar-manager.webp">
+      <div class="titulo">
+        <h1>Faça seu avatar para usar no Slack e GitHub:</h1>
+        <form id="questionForm">
+          <div class="form-group">
+            <label for="texto"
+              >Siga o exemplo:</label
+            >
+            <input
+              maxlength="2"
+              type="text"
+              id="texto"
+              name="texto"
+              placeholder="Ex: ayrton.senna@escolarmanager.com.br = AS"
+            />
+          </div>
+          <div class="form-group">
+            <label for="corFundo">Escolha a cor de fundo:</label>
+            <input type="color" id="corFundo" name="corFundo" />
+          </div>
+          <div class="botao">
+            <input type="submit" value="Gerar" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="avatares-gerados" id="avataresGerados">
+      <h2 class="titulo-avatares-gerados">Avatares Gerados:</h2>
+      <div class="imagecont" id="imageContainer"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
